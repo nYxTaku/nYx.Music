@@ -1,0 +1,141 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>nYx Music</title>
+    <link rel="stylesheet" href="contentstyle.css">
+    <script type="text/javascript" src="select.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="hero">
+            <div class="main-width">
+                <header>
+                    <div class="logo">
+                        <a href="nYxMusic.html">
+                            <i class="fa-solid fa-y"></i>
+                        </a>
+                    </div> 
+                        <nav>
+                            <div class="hamb">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <ul class="nav-list">
+                                <li><a href="instruments.html">Instruments</a></li>
+                                <li><a href="signin.html">Sign In</a></li>
+                                <li><a href="profile.html">Profile</a></li>
+                                <li class="btn"><a href="premium.html">Premium</a></li>
+                            </ul>
+                        </nav>
+                </header>
+                <div class="item1">
+                    <h3 class="filterset">Browse using Filters</h3>
+                    <form class="search-bar">
+                        <input type="text" placeholder="Search..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <select name="Genre" multiple multiselect-search="true" 
+                    multiselect-select-all="true" multiselect-max-items="6" class="Genres">                   
+                    <option>Pop</option>                  
+                    <option>Blues</option>
+                    <option>Classical</option>                   
+                    <option>Jazz</option>                    
+                    <option>Heavy Metal</option>     
+                    <option>J-pop</option>
+                    </select>
+                    <select name="Difficulty" multiple multiselect="true" 
+                    multiselect-max-items="1" class="Difficulty">
+                    <option>Beginner</option>
+                    <option>Easy</option>
+                    <option>Normal</option>
+                    <option>Hard</option>
+                    <option>Expert</option>       
+                    </select>
+                    <select name="Type" multiple multiselect-search="true" 
+                    multiselect-select-all="true" multiselect-max-items="6" class="Type">
+                    <option>Chords</option>
+                    <option>Tabs</option>
+                    <option>Notes</option> 
+                    <option>Notations</option>
+                    </select>
+                </div>
+                <div class="main">
+                    <div class="img">
+                        <img src="guitarsheet.jpg">
+                    </div>
+                    <div class="audio">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4PTG3Z6ehGkBFwjybzWkR8?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/34LjFQieWFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review">
+            <div class="wrapper">
+                <div class="box">
+                    <i class="fas fa-quote-left quote"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget mollis lectus, nec hendrerit massa. Vestibulum et ex vel nisi feugiat bibendum pretium id sapien.</p>
+                    <div class="content">
+                        <div class="info">
+                            <div class="name">Srijith</div>
+                            <div class="job.">Bass</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-quote-left quote"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget mollis lectus, nec hendrerit massa. Vestibulum et ex vel nisi feugiat bibendum pretium id sapien.</p>
+                    <div class="content">
+                        <div class="info">
+                            <div class="name">Rishab</div>
+                            <div class="job.">Ukulele | Instructor</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-quote-left quote"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget mollis lectus, nec hendrerit massa. Vestibulum et ex vel nisi feugiat bibendum pretium id sapien.</p>
+                    <div class="content">
+                        <div class="info">
+                            <div class="name">Harish</div>
+                            <div class="job.">Guitar</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="arrow-btn">
+            <a href="#"><span class="fas fa-angle-up"></span></a>
+        </div>
+                

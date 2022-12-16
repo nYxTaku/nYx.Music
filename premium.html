@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>nYx Music</title>
+    <link rel="stylesheet" href="premiumstyle.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <div class="logo">
+                    <a href="nYxMusic.html">
+                        <img src="logo.png">
+                    </a>
+                </div>
+                    <a href="nYxMusic.html">
+                        <button type="button">Home</button>
+                    </a>
+                <img src="menu.png" class="menu-icon">
+            </nav>
+            <div class="row">
+                <div class="col-1">
+                    <h1>nYx.Music<br>Premium Plan</h1>
+                    <p>Follow lesson plans created by real music teachers from Bangalore, learn fast with interactive tutorials, and stay motivated with goals and progress tracking. </p>
+                    <a href="payments.html">
+                        <button type="button">Proceed to Payment</button>
+                    </a>
+                    <ul>
+                        <li class="btn active"></li>
+                        <li class="btn"></li>
+                        <li class="btn"></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <img src="premium1.jpg" id="banner">
+                </div>
+            </div>
+        </div>
+        <script>
+            var btn = document.getElementsByClassName("btn");
+            var banner = document.getElementById("banner");
+            btn[0].onclick = function(){
+                banner.src = "premium1.jpg";
+                animation();
+                this.classList.add("active");
+            }
+            btn[1].onclick = function(){
+                banner.src = "premium2.jpg";
+                animation();
+                this.classList.add("active");
+            }
+            btn[2].onclick = function(){
+                banner.src = "premium3.jpg";
+                animation();
+                this.classList.add("active");
+            }
+            function animation(){
+                banner.classList.add("zoom");
+                setTimeout(function(){
+                    banner.classList.remove("zoom");
+                },500);
+                for(b of btn){
+                    b.classList.remove("active");
+                }
+            }
+        </script>
+    </body>
+</html>    
